@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+    <!--<bean id="tea" class="com.spring.demo.Tea"></bean>-->
+    <!--<bean id="expressTea" class="com.spring.demo.ExpressTea"></bean>-->
+    <!--<bean id="teaRestaurant" class="com.spring.demo.Restaurant">
+        <property name="hotDrink" ref="tea"></property>
+    </bean>-->
+
+    <!--<bean id="autowireDrink" class="com.spring.demo.Restaurant" autowire="byName"></bean>
+    <bean id="hotDrink" class="com.spring.demo.ExpressTea"></bean>-->
+
+    <!--<bean id="autowireDrink" class="com.spring.demo.Restaurant" autowire="byType"></bean>-->
+
+
+    <bean id="tea" name="hotDrink" class="com.spring.demo.Tea"></bean>
+    <bean id="expressTea" class="com.spring.demo.ExpressTea"></bean>
+    <bean id="autowireDrink" class="com.spring.demo.Restaurant" autowire="constructor" scope="prototype"></bean>
+
+
+
+    <!--<bean id="database" class="com.spring.demo.Database">-->
+    <!--<property name="name" value="mySql"></property>-->
+    <!--<property name="port" value="3306"></property>-->
+    <!--</bean>-->
+
+
+    <!--<bean id="expressTeaRestaurant" class="com.spring.demo.Restaurant">-->
+        <!--<property name="hotDrink">-->
+        <!--<bean id="expressTea" class="com.spring.demo.ExpressTea"></bean>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    <!--<bean id="complex" class="com.spring.demo.Complex">
+        <property name="list">
+            <list>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+                <value>4</value>
+                <value>5</value>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="1" value="One"></entry>
+                <entry key="2" value="Two"></entry>
+                <entry key="3" value="3"></entry>
+                <entry key="4" value="4"></entry>
+                <entry key="1" value="5"></entry>
+            </map>
+        </property>
+        <property name="set">
+            <set>
+                <value>1</value>
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+            </set>
+        </property>
+    </bean>-->
+
+
+</beans>
