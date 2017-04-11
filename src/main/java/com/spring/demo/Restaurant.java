@@ -6,6 +6,9 @@ package com.spring.demo;
 public class Restaurant {
     HotDrink hotDrink;
 
+    public Restaurant() {
+    }
+
     public HotDrink getHotDrink() {
         return hotDrink;
     }

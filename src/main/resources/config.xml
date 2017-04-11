@@ -17,16 +17,22 @@
     <!--<bean id="autowireDrink" class="com.spring.demo.Restaurant" autowire="byType"></bean>-->
 
 
-    <bean id="tea" name="hotDrink" class="com.spring.demo.Tea"></bean>
+    <bean id="autowireDrink" class="com.spring.demo.Restaurant">
+        <constructor-arg value="1" type="java.lang.Integer"></constructor-arg>
+        <constructor-arg value="0" type="java.lang.Integer"></constructor-arg>
+    </bean>
+
+
+    <!--<bean id="tea" name="hotDrink" class="com.spring.demo.Tea"></bean>
     <bean id="expressTea" class="com.spring.demo.ExpressTea"></bean>
     <bean id="autowireDrink" class="com.spring.demo.Restaurant" autowire="constructor" scope="prototype"></bean>
+-->
 
 
-
-    <!--<bean id="database" class="com.spring.demo.Database">-->
-    <!--<property name="name" value="mySql"></property>-->
-    <!--<property name="port" value="3306"></property>-->
-    <!--</bean>-->
+    <bean id="database" class="com.spring.demo.Database">
+    <property name="name" value="mySql"></property>
+    <property name="port" value="3306"></property>
+    </bean>
 
 
     <!--<bean id="expressTeaRestaurant" class="com.spring.demo.Restaurant">-->
@@ -35,7 +41,7 @@
         <!--</property>-->
     <!--</bean>-->
 
-    <!--<bean id="complex" class="com.spring.demo.Complex">
+    <bean id="complex" class="com.spring.demo.Complex">
         <property name="list">
             <list>
                 <value>1</value>
@@ -62,7 +68,7 @@
                 <value>3</value>
             </set>
         </property>
-    </bean>-->
+    </bean>
 
 
 </beans>
